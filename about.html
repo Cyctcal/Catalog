@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>About Us - LUXELE</title>
+    <meta name="description" content="Learn about LUXELE - Professional B2B manufacturer of certified intimate wellness products.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#be123c',
+                        'primary-dark': '#9f1239',
+                        'primary-light': '#f43f5e',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen flex flex-col bg-white text-slate-800 font-sans antialiased">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg">
+        <nav class="container mx-auto px-5 md:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-[72px]">
+                <a href="index.html" class="flex items-center gap-3">
+                    <span class="text-xl tracking-[0.15em] font-serif">
+                        <span class="text-slate-900 font-bold">LUX</span><span class="text-slate-400 font-normal">ELE</span>
+                    </span>
+                </a>
+                <ul class="hidden lg:flex items-center gap-9">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li class="relative group">
+                        <button class="nav-link flex items-center gap-1">
+                            Categories
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mega-menu absolute top-full left-1/2 -translate-x-1/2 pt-5 w-screen max-w-5xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none group-hover:pointer-events-auto">
+                            <div class="bg-white border border-slate-200/80 shadow-xl p-8 rounded-lg">
+                                <div class="grid grid-cols-5 gap-8">
+                                    <div>
+                                        <h3 class="mega-menu-title">Vibrators</h3>
+                                        <ul class="space-y-2">
+                                            <li><a href="products.html?cat=vibrators&sub=bullets" class="mega-menu-link">Bullets & Eggs</a></li>
+                                            <li><a href="products.html?cat=vibrators&sub=sucking" class="mega-menu-link">Sucking Vibrators</a></li>
+                                            <li><a href="products.html?cat=vibrators&sub=gspot" class="mega-menu-link">G-Spot Vibrators</a></li>
+                                            <li><a href="products.html?cat=vibrators&sub=wands" class="mega-menu-link">Wands</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="mega-menu-title">Masturbators</h3>
+                                        <ul class="space-y-2">
+                                            <li><a href="products.html?cat=masturbators&sub=sleeve" class="mega-menu-link">Sleeves</a></li>
+                                            <li><a href="products.html?cat=masturbators&sub=handheld" class="mega-menu-link">Handheld Stroker</a></li>
+                                            <li><a href="products.html?cat=masturbators&sub=torso" class="mega-menu-link">Torso</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="mega-menu-title">Dildos</h3>
+                                        <ul class="space-y-2">
+                                            <li><a href="products.html?cat=dildos&sub=realistic" class="mega-menu-link">Realistic</a></li>
+                                            <li><a href="products.html?cat=dildos&sub=nonrealistic" class="mega-menu-link">Non-Realistic</a></li>
+                                            <li><a href="products.html?cat=dildos&sub=double" class="mega-menu-link">Double Ended</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="mega-menu-title">Bondage</h3>
+                                        <ul class="space-y-2">
+                                            <li><a href="products.html?cat=anal&sub=restraints" class="mega-menu-link">Restraints</a></li>
+                                            <li><a href="products.html?cat=anal&sub=sets" class="mega-menu-link">Bondage Sets</a></li>
+                                            <li><a href="products.html?cat=anal&sub=sensory" class="mega-menu-link">Sensory Play</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="mega-menu-title">Wellness</h3>
+                                        <ul class="space-y-2">
+                                            <li><a href="products.html?cat=wellness&sub=kegel" class="mega-menu-link">Kegel Trainers</a></li>
+                                            <li><a href="products.html?cat=wellness&sub=lubricants" class="mega-menu-link">Lubricants</a></li>
+                                            <li><a href="products.html?cat=wellness&sub=cleaners" class="mega-menu-link">Cleaners</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="about.html" class="nav-link" style="color:#be123c">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="flex items-center gap-4">
+                    <button id="search-toggle" class="hidden lg:block text-slate-500 hover:text-slate-900 transition-colors" aria-label="Search"><i class="fas fa-search text-sm"></i></button>
+                    <a href="contact.html" class="hidden lg:inline-flex items-center gap-2 px-5 py-2 bg-slate-900 text-white text-xs font-medium uppercase tracking-wider rounded hover:bg-slate-800 transition-colors">Get Quote</a>
+                    <button id="mobile-menu-btn" class="lg:hidden text-slate-700" aria-label="Menu"><i class="fas fa-bars text-lg"></i></button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-slate-100 max-h-[70vh] overflow-y-auto">
+                <ul class="flex flex-col gap-1">
+                    <li><a href="index.html" class="mobile-link">Home</a></li>
+                    <li><a href="products.html" class="mobile-link">Products</a></li>
+                    <li>
+                        <button class="mobile-cat-toggle w-full flex items-center justify-between mobile-link">
+                            Categories <i class="fas fa-chevron-down text-xs transition-transform duration-200"></i>
+                        </button>
+                        <div class="mobile-cat-list hidden pl-4 mt-1">
+                            <a href="products.html?cat=vibrators" class="mobile-sublink">Vibrators</a>
+                            <a href="products.html?cat=masturbators" class="mobile-sublink">Masturbators</a>
+                            <a href="products.html?cat=dildos" class="mobile-sublink">Dildos</a>
+                            <a href="products.html?cat=anal" class="mobile-sublink">Bondage</a>
+                            <a href="products.html?cat=wellness" class="mobile-sublink">Wellness</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html" class="mobile-link">About</a></li>
+                    <li><a href="contact.html" class="mobile-link">Contact</a></li>
+                 </ul>
+                    <div class="mt-4 pt-4 border-t border-slate-100 px-4">
+                        <a href="contact.html" class="flex items-center justify-center gap-2 w-full px-5 py-3 bg-slate-900 text-white text-xs font-medium uppercase tracking-wider rounded hover:bg-slate-800 transition-colors">
+                            Get Quote
+                        </a>
+                    </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="fixed inset-0 z-[60] bg-black/50 backdrop-blur-sm hidden">
+        <div class="container mx-auto px-6 pt-24 max-w-2xl">
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+                <div class="flex items-center gap-3 px-6 py-4 border-b border-slate-100">
+                    <i class="fas fa-search text-slate-400"></i>
+                    <input id="search-input" type="text" placeholder="Search products..." class="flex-1 text-slate-800 outline-none text-lg placeholder:text-slate-400" autocomplete="off">
+                    <button id="search-close" class="text-slate-400 hover:text-slate-600 transition-colors"><i class="fas fa-times"></i></button>
+                </div>
+                <div id="search-results" class="max-h-[60vh] overflow-y-auto">
+                    <div class="px-6 py-8 text-center text-slate-500 text-sm">Type to search products...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex-grow">
+        <!-- Page Banner -->
+        <section class="page-banner bg-[#f8fafc]">
+            <div class="container mx-auto px-6">
+                <h1 class="section-title text-center">About Us</h1>
+                <p class="section-subtitle text-center">Your trusted partner in intimate wellness manufacturing</p>
+            </div>
+        </section>
+
+        <!-- Our Story -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
+                        <div class="animate-on-scroll">
+                            <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-white">
+                                <img src="images/product-71.png" alt="Our Manufacturing Facility" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="animate-on-scroll">
+                            <span class="text-xs text-primary tracking-widest font-medium uppercase">Our Story</span>
+                            <h2 class="text-2xl md:text-4xl font-serif font-light text-slate-800 mt-3 mb-6">
+                                A Decade of Excellence in Intimate Wellness
+                            </h2>
+                            <p class="text-slate-600 leading-relaxed mb-4">
+                                Founded in 2015, LUXELE has grown from a small workshop to one of the most trusted B2B manufacturers in the intimate wellness industry. Our mission is simple: provide businesses worldwide with high-quality, body-safe products at competitive wholesale prices.
+                            </p>
+                            <p class="text-slate-600 leading-relaxed mb-4">
+                                With over 10 years of experience, we understand the unique needs of our B2B partners. Whether you're a retailer, distributor, or brand owner, we offer comprehensive OEM/ODM services to help you build your product line.
+                            </p>
+                            <p class="text-slate-600 leading-relaxed">
+                                Our 15,000 sqm facility in Shenzhen features ISO-certified production lines, in-house quality testing labs, and a dedicated R&D team constantly innovating new products.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values -->
+        <section class="py-16 md:py-24 bg-[#fdf2f8]">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h2 class="section-title">Our Values</h2>
+                    <p class="section-subtitle">What drives us every day</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="text-center p-6 md:p-10 bg-white rounded-2xl animate-on-scroll">
+                        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-shield-halved text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-medium text-slate-800 mb-3">Safety First</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            Every product undergoes rigorous testing. We use only body-safe, medical-grade silicone and materials that meet international safety standards.
+                        </p>
+                    </div>
+                    <div class="text-center p-6 md:p-10 bg-white rounded-2xl animate-on-scroll">
+                        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-lightbulb text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-medium text-slate-800 mb-3">Innovation</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            Our R&D team continuously develops new products with the latest technology, from app-controlled devices to ergonomic designs.
+                        </p>
+                    </div>
+                    <div class="text-center p-6 md:p-10 bg-white rounded-2xl animate-on-scroll">
+                        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-handshake text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-medium text-slate-800 mb-3">Partnership</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            We build long-term relationships with our partners, offering dedicated support, flexible MOQ, and competitive pricing structures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h2 class="section-title">Our Journey</h2>
+                    <p class="section-subtitle">Key milestones in our growth</p>
+                </div>
+                <div class="max-w-3xl mx-auto">
+                    <div class="space-y-12">
+                        <div class="flex gap-6 animate-on-scroll">
+                            <div class="flex-shrink-0 w-24 text-right">
+                                <span class="text-primary font-serif text-2xl">2015</span>
+                            </div>
+                            <div class="flex-shrink-0 w-px bg-slate-200 relative">
+                                <div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-primary rounded-full"></div>
+                            </div>
+                            <div class="pb-8">
+                                <h3 class="font-medium text-slate-800 mb-2">Company Founded</h3>
+                                <p class="text-slate-500 text-sm leading-relaxed">Started with a small team of 15 people in Shenzhen, focusing on vibrator manufacturing.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 animate-on-scroll">
+                            <div class="flex-shrink-0 w-24 text-right">
+                                <span class="text-primary font-serif text-2xl">2017</span>
+                            </div>
+                            <div class="flex-shrink-0 w-px bg-slate-200 relative">
+                                <div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-primary rounded-full"></div>
+                            </div>
+                            <div class="pb-8">
+                                <h3 class="font-medium text-slate-800 mb-2">ISO Certification</h3>
+                                <p class="text-slate-500 text-sm leading-relaxed">Achieved ISO 9001 certification and expanded product line to include dildos and masturbators.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 animate-on-scroll">
+                            <div class="flex-shrink-0 w-24 text-right">
+                                <span class="text-primary font-serif text-2xl">2019</span>
+                            </div>
+                            <div class="flex-shrink-0 w-px bg-slate-200 relative">
+                                <div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-primary rounded-full"></div>
+                            </div>
+                            <div class="pb-8">
+                                <h3 class="font-medium text-slate-800 mb-2">New Factory & 100+ Partners</h3>
+                                <p class="text-slate-500 text-sm leading-relaxed">Moved to our current 15,000 sqm facility. Reached 100+ B2B partners across 50 countries.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 animate-on-scroll">
+                            <div class="flex-shrink-0 w-24 text-right">
+                                <span class="text-primary font-serif text-2xl">2022</span>
+                            </div>
+                            <div class="flex-shrink-0 w-px bg-slate-200 relative">
+                                <div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-primary rounded-full"></div>
+                            </div>
+                            <div class="pb-8">
+                                <h3 class="font-medium text-slate-800 mb-2">Smart Products Launch</h3>
+                                <p class="text-slate-500 text-sm leading-relaxed">Launched our app-controlled smart product line with Bluetooth and IoT capabilities.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 animate-on-scroll">
+                            <div class="flex-shrink-0 w-24 text-right">
+                                <span class="text-primary font-serif text-2xl">2025</span>
+                            </div>
+                            <div class="flex-shrink-0 w-px bg-slate-200 relative">
+                                <div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-primary rounded-full"></div>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-slate-800 mb-2">Global Leader</h3>
+                                <p class="text-slate-500 text-sm leading-relaxed">Now serving 2000+ B2B partners in 100+ countries with 500+ SKUs across all product categories.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-16 md:py-24 bg-gradient-to-br from-primary to-primary-dark relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+                <div class="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+            </div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-2xl md:text-5xl font-serif font-light text-white mb-6">Become Our Partner</h2>
+                    <p class="text-lg text-white/80 mb-10 leading-relaxed">
+                        Join 2000+ businesses worldwide who trust LUXELE for their intimate wellness product supply.
+                    </p>
+                    <a href="contact.html" class="px-10 py-4 bg-white text-primary font-medium text-lg rounded-full hover:bg-slate-50 transition-all duration-300 hover:shadow-2xl inline-block">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#0c0c0c] text-white">
+        <div class="container mx-auto px-5 md:px-6 lg:px-8 pt-20 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
+                <div class="lg:col-span-4">
+                    <a href="index.html" class="inline-block mb-5">
+                        <span class="text-xl tracking-[0.15em] font-serif">
+                            <span class="text-white font-bold">LUX</span><span class="text-slate-500 font-normal">ELE</span>
+                        </span>
+                    </a>
+                    <p class="text-slate-500 text-sm leading-relaxed max-w-xs">Professional B2B manufacturer of certified intimate wellness products.</p>
+                </div>
+                <div class="lg:col-span-2">
+                    <h3 class="text-[11px] font-semibold tracking-[0.15em] uppercase text-slate-400 mb-5">Products</h3>
+                    <ul class="space-y-3">
+                        <li><a href="products.html?cat=vibrators" class="text-slate-500 hover:text-white text-sm transition-colors">Vibrators</a></li>
+                        <li><a href="products.html?cat=masturbators" class="text-slate-500 hover:text-white text-sm transition-colors">Masturbators</a></li>
+                        <li><a href="products.html?cat=dildos" class="text-slate-500 hover:text-white text-sm transition-colors">Dildos</a></li>
+                        <li><a href="products.html?cat=anal" class="text-slate-500 hover:text-white text-sm transition-colors">Bondage</a></li>
+                        <li><a href="products.html?cat=wellness" class="text-slate-500 hover:text-white text-sm transition-colors">Wellness</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2">
+                    <h3 class="text-[11px] font-semibold tracking-[0.15em] uppercase text-slate-400 mb-5">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-slate-500 hover:text-white text-sm transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="text-slate-500 hover:text-white text-sm transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-slate-500 hover:text-white text-sm transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="text-slate-500 hover:text-white text-sm transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-4">
+                    <h3 class="text-[11px] font-semibold tracking-[0.15em] uppercase text-slate-400 mb-5">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3"><i class="fab fa-telegram text-slate-600 text-xs"></i><span class="text-slate-500 text-sm">Rose_6478775</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-phone text-slate-600 text-xs"></i><span class="text-slate-500 text-sm">+86 158 7142 4635</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-location-dot text-slate-600 text-xs"></i><span class="text-slate-500 text-sm">Shenzhen, China</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-14 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-600 text-xs">&copy; 2026 LUXELE. All rights reserved.</p>
+                <p class="text-slate-600 text-[11px] tracking-wide">Wholesale Sex Toys From China</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <a href="https://wa.me/8615871424635" target="_blank" rel="noopener noreferrer" id="whatsapp-float" class="fixed bottom-6 right-6 z-50 w-12 h-12 bg-[#25D366] text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-200 flex items-center justify-center" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp text-xl"></i>
+    </a>
+
+</body>
+</html>
