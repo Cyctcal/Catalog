@@ -4,6 +4,22 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
+    // Language Selector
+    document.querySelectorAll('.mobile-lang-btn').forEach(function(a) {
+        a.addEventListener('click', function(e) {
+            e.preventDefault();
+            var lang = a.getAttribute('data-lang');
+            if (lang && typeof i18n !== 'undefined') {
+                i18n.apply(lang);
+            }
+        });
+    });
+
+    var savedLang = localStorage.getItem('luxele_lang');
+    if (savedLang && typeof i18n !== 'undefined' && i18n.translations[savedLang]) {
+        i18n.apply(savedLang);
+    }
+
     // Mobile Menu Toggle
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
